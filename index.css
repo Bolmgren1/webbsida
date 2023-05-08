@@ -2,19 +2,20 @@ body{
     display: grid;
     margin: 0 auto;
     background-color:aqua;
-    grid-template-columns: 3 fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-gap: 13px;
     text-align: center;
     grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "footer"
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer"
     
 }
 header{
     grid-area: header;
+    grid-template-rows: 1fr 1fr;
     font-size: 90 px;
     border-radius: 60 px;
     border-style: solid;
