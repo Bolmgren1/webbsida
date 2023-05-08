@@ -35,7 +35,7 @@ nav li{
     font-size: 20px;
     border-style: solid;
     border-color: black;
-   
+    border-radius: 20px;
     margin-left: 5ch;
     margin-right: 5ch;
 }
@@ -46,9 +46,8 @@ nav li:hover{
 }
 
 
-nav{
-    font-size: 50px;
-}
+
+
 nav > ul{
    display:grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -63,3 +62,4 @@ table,tr,td{
     color: black;
     margin-left: 75ch;
 }
+
