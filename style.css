@@ -76,7 +76,7 @@ nav li:hover{
 
 nav > ul{
    display:grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
    margin: 0;
 }
 a:link{
@@ -115,29 +115,33 @@ footer{
     width: 100%;
     height: 2.5rem;
 }
-#sida2.html iframe{
+#rock.html iframe{
     margin-left: 40em;
 }
-#sida3.html img{
+#rap.html img{
     width: 20%;
     height:20%;
 }
 form{
-    margin-left: 80%;
-}
-#sida5.html h2{
-   text-align: right;
-}
-.formulär{
     text-align: center;
+}
+
+
+.formulär{
+   text-align: center;
     background-color: white;
-    grid-template-columns: 1fr;
+  
 }
 form label, form input{
     text-align: center;
     margin:0;
     grid-template-columns: auto;
 }
-.Rock{
-    background-color: pink;
+ol{
+    text-align: left;
+}
+.Musikfakta{
+    text-align: center;
+    font-size:larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
