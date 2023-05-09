@@ -44,7 +44,6 @@ nav{
     grid-area: nav;
     margin: 0;
     margin-top: 2%;
-    margin-left: 0.1%;
     text-align: center;
     
 }
@@ -140,7 +139,7 @@ form label, form input{
 ol{
     text-align: left;
 }
-.Musikfakta{
+.varför{
     text-align: center;
     font-size:larger;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
