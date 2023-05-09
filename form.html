@@ -6,7 +6,7 @@
         <link href ="style.css"  rel ="stylesheet">
 
     </head>
-    <body class="formulär">
+    <body id="form">
         
             <header>
                 
@@ -32,15 +32,15 @@
                 
                         
                         <h2> Svara gärna på frågorgna nedan! </h2>
-                        <form action="#" method="post">
-                            <label for="förnamn">Skriv in ditt första namn</label><br>
-                            <input type="text" id="förnamn" name="förnamn"><br>
-                            <label for="Efternamn">Skriv in ditt efternamn</label><br>
+                        <form action="#" method="post"><!--motoderna för formuläret och starten på formuläret-->
+                            <label for="förnamn">Skriv in ditt första namn</label><br><!--Rubrik till furmulär cell-->
+                            <input type="text" id="förnamn" name="förnamn"><br><!--formulär cell-->
+                            <label for="efternamn">Skriv in ditt efternamn</label><br>
                             <input type="text" id="efternamn" name="efternamn"><br>
                             <label for="epost">Skriv in din epost</label><br>
                             <input type="email" id="epost" name="epost"><br>
 
-                            <label for="favoritgenre">vilken/vilka är din favoritgengre utav dessa?</label><br>
+                            <p>vilken/vilka är din favoritgengre utav dessa?</p>
                             <input type="checkbox" id="Rock" name="Favoritegengre" value="ROCK">
                             <label for="Rock">ROCK</label>
                             <input type="checkbox" id="Rap" name="Favoritegengre" value="RAP">
@@ -50,21 +50,21 @@
                             <input type="checkbox" id="Country" name="Favoritegengre" value="COUNTRY">
                             <label for="Country">COUNTRY</label><br>
 
-                            <label for="extra">Något du vill att jag ska lägga till?</label>
+                            <p>Något du vill att jag ska lägga till?</p>
                             <input type="radio" id="Ja" name="Ja">
                             <label for="Ja">Ja</label>
                             <input type="radio" id="Nej" name="Nej">
                             <label for="Nej">Nej</label><br>
-                            <label for="extra">Isåfall vad?</label><br>
-                            <input type="text" id="extra" name="extra"><br>
+                            <p>Isåfall vad?</p>
+                            <textarea>Ditt förslag</textarea><br><!--plats att skriva-->
 
-                            <input type="submit" value="submit" id="submit">
+                            <input type="submit" value="submit" id="submit"><!--där man submittar sina svar-->
 
                             
                         </form>
                     </section>
                     <section>
-                        <article class="varför">
+                        <article class="vrf"><!--specifierar det som står under och class för att enkelt ändra på i css-->
                             <h3>Varför ett formulär?</h3>
                             <p>Detta formulär gjordes så man kan se vad det är som folk gillar och vad man inte gillar, även om det</p>
                             <p>är något som man känner att sidan saknas finns det även ett alternativ för det!</p>

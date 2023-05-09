@@ -1,4 +1,4 @@
-body{
+body{/*skapar layout för header, nav, main och footer, bakgrundsfärg, margin så den täcker hela sidan*/
     display: grid;
     margin: 0 auto;
     height: auto;
@@ -14,14 +14,14 @@ body{
     "footer footer"
     
 }
-main{
+main{/*main delen är en del av griden med 2 kollumner, och sotrleken lagre på texten*/
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: large;
     
 }
-header{
+header{/*header delen är en del av griden, läger till en border med färg och rundande hörn*/
     grid-area: header;
     display: grid;
     grid-template-rows: 2fr 2fr;
@@ -32,28 +32,29 @@ header{
     
     
 }
-h1{
+h1{/* bestämmer textens storlek och så den ligger på rätt plats*/
     font-size: 20px;
+    margin: 0;
 }
 
 
 
 
 
-nav{
+nav{/*Ligger på rätt plats med margin, och nav är en del av griden*/
     grid-area: nav;
     margin: 0;
     margin-top: 2%;
-    text-align: center;
+    
     
 }
-nav a{
+nav a{ /*Så länkarna bara ser ut som text*/
     text-decoration: none;
 }
 
 
 
-nav li{
+nav li{ /*centererad text, svart kant runt alla menyer med runda hörn, även hur långt de har mellan varandra och så det inte blir en lista med punkter*/
     list-style-type:none;
     text-align: center;
     font-size: 25px;
@@ -65,7 +66,7 @@ nav li{
     
 }
 
-nav li:hover{
+nav li:hover{ /*När man håller över den globala menyn blir färgen gery annars är dom vita*/
     background-color: #808080;
     color:white;
 }
@@ -73,30 +74,30 @@ nav li:hover{
 
 
 
-nav > ul{
+nav > ul{ /*naven är uppdelad i 6 delar och är en del av griden, de ska även vara på rätt plats och ul är som ett barn till naven*/
    display:grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
    margin: 0;
 }
-a:link{
+a:link{ /*LoVe Focus HAte och gör att textfärgen blir blå i den globala menyn*/
     color: #0000EE;
 }
-a:visited{
+a:visited{/*LoVe Focus HAte och gör textfärgen lila när man varit inne på den*/
     color:#551A8B;
 }
-a:hover{
+a:hover{/*LoVe Focus HAte och gör textfärgen svart när man håller över den*/
     color: black;
 }
-a:active{
+a:active{/*LoVe Focus HAte och gör färgen blå när den är aktiv*/
     color:rgb(0, 0, 225);
 }
 
 
 
 
-table,td{
+table,td{/*Gör kanten till tabellen svart och även inre kanterna, ändrar storlekerna och platsenerna på alla delar*/
     text-align: center;
-    border-width: 4px;
+    border-width: 5px;
     border-style: solid;
     border-color: black;
     font-size: 20px;
@@ -107,39 +108,37 @@ table,td{
     border-spacing: 5px;
     
 }
-/*Bestämmer vart min footer ska vara (för det mesta tagen från https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/)*/
+/*Bestämmer att footern ska stanna längst ner hela tiden (för det mesta tagen från https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/) 
+och sedan hur den ser ut och att det är en del av griden*/
 footer{
+    grid-area: footer;
     position:fixed;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
-}
+    background-color: grey;
+    font-size: medium;
+}/*vart videon ska ligga på sidan*/
 #rock.html iframe{
     margin-left: 40em;
 }
-#rap.html img{
-    width: 20%;
-    height:20%;
-}
-form{
-    text-align: center;
+#rap img{/*bestämmer storlek på bild och så den sitter rätt*/
+    width: 30%;
+    margin:0;
+    
 }
 
 
-.formulär{
+.formul{ /*allt i formul id har bakgrunden vit och centrerad text*/
    text-align: center;
     background-color: white;
   
 }
-form label, form input{
-    text-align: center;
-    margin:0;
-    grid-template-columns: auto;
-}
-ol{
+
+ol{/*texten i order listan ligger till vänster*/
     text-align: left;
 }
-.varför{
+.vrf{ /* allt i klassen vrf har larger text och en annan font*/
     text-align: center;
     font-size:larger;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
