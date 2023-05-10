@@ -1,10 +1,10 @@
 body{/*skapar layout för header, nav, main och footer, bakgrundsfärg, margin så den täcker hela sidan*/
     display: grid;
-    margin: 0 auto;
+    margin: 0;
     height: auto;
     background-color:aliceblue;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 50px auto 50px;
+    grid-template-rows: 50px 50px auto 40px;
     grid-gap: 13px;
     text-align: center;
     grid-template-areas: 
@@ -128,8 +128,6 @@ footer{
 #Rap img{/*bestämmer storlek på bild och så den sitter rätt*/
     width: 45vh;
     margin:0;
-    
-    
 }
 
 
@@ -142,18 +140,25 @@ footer{
 ol{/*texten i order listan ligger till vänster*/
     text-align: left;
 }
-.vrf{ /* allt i klassen vrf har larger text och en annan font*/
+article{ /* allt i article har larger text och en annan font*/
     text-align: center;
     font-size:larger;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.tabelli :nth-child(odd){
-    background-color: red;
+.tabelli tr:nth-child(odd){ /*gör så klassen för tabellen har en viss färg för varje ojämn rad*/
+    background-color: lightblue;
 }
-#Main img{
+#Main img{/*ändrar tjocklecken på bild i id Main*/
     width:25vh;
 }
-#Jazz img{
+#Jazz img{/*ändrar tjockleck och runda hörn på bild i id Jazz*/
     width: 45vh;
     border-radius:25px ;
+}
+#Rap img{
+    margin:0;
+}
+#Country img{
+    border-radius: 25%;
+    margin:0;
 }
