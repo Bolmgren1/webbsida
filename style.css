@@ -119,7 +119,7 @@ footer{
     background-color: grey;
     font-size: medium;
 }/*vart videon ska ligga på sidan*/
-#rock.html iframe{
+#rock iframe{
     margin-left: 40em;
 }
 #rap img{/*bestämmer storlek på bild och så den sitter rätt*/
@@ -129,7 +129,7 @@ footer{
 }
 
 
-.formul{ /*allt i formul id har bakgrunden vit och centrerad text*/
+.form{ /*allt i formul id har bakgrunden vit och centrerad text*/
    text-align: center;
     background-color: white;
   
