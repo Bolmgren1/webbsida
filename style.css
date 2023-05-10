@@ -95,7 +95,7 @@ a:active{/*LoVe Focus HAte och gör färgen blå när den är aktiv*/
 
 
 
-table,td{/*Gör kanten till tabellen svart och även inre kanterna, ändrar storlekerna och platsenerna på alla delar*/
+table, th, td{/*Gör kanten till tabellen svart och även inre kanterna, ändrar storlekerna och platsenerna på alla delar*/
     text-align: center;
     border-width: 5px;
     border-style: solid;
@@ -108,6 +108,9 @@ table,td{/*Gör kanten till tabellen svart och även inre kanterna, ändrar stor
     border-spacing: 5px;
     
 }
+table, th{
+    font-style: italic;
+}
 /*Bestämmer att footern ska stanna längst ner hela tiden (för det mesta tagen från https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/) 
 och sedan hur den ser ut och att det är en del av griden*/
 footer{
@@ -119,12 +122,13 @@ footer{
     background-color: grey;
     font-size: medium;
 }/*vart videon ska ligga på sidan*/
-#rock iframe{
-    margin-left: 40em;
+#Rock iframe{
+    margin-right: 27%;
 }
-#rap img{/*bestämmer storlek på bild och så den sitter rätt*/
-    width: 30%;
+#Rap img{/*bestämmer storlek på bild och så den sitter rätt*/
+    width: 45vh;
     margin:0;
+
     
 }
 
@@ -142,4 +146,14 @@ ol{/*texten i order listan ligger till vänster*/
     text-align: center;
     font-size:larger;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tabelli :nth-child(odd){
+    background-color: red;
+}
+#Main img{
+    width:25vh;
+}
+#Jazz img{
+    width: 45vh;
+    border-radius:25px ;
 }
