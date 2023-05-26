@@ -44,9 +44,6 @@ h1{/* bestämmer textens storlek och så den ligger på rätt plats*/
 nav{/*Ligger på rätt plats med margin, och nav är en del av griden*/
     grid-area: nav;
     margin: 0;
-    margin-top: 2%;
-    
-    
 }
 nav a{ /*Så länkarna bara ser ut som text*/
     text-decoration: none;
@@ -88,6 +85,9 @@ a:visited{/*LoVe Focus HAte och gör textfärgen lila när man varit inne på de
 a:hover{/*LoVe Focus HAte och gör textfärgen svart när man håller över den*/
     color: black;
 }
+a:focus { 
+    color:rgb(0, 0, 225)
+}
 a:active{/*LoVe Focus HAte och gör färgen blå när den är aktiv*/
     color:rgb(0, 0, 225);
 }
@@ -115,7 +115,6 @@ table, th{
 och sedan hur den ser ut och att det är en del av griden*/
 footer{
     grid-area: footer;
-    position:fixed;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
@@ -147,6 +146,11 @@ article{ /* allt i article har larger text och en annan font*/
 }
 .tabelli tr:nth-child(odd){ /*gör så klassen för tabellen har en viss färg för varje ojämn rad*/
     background-color: lightblue;
+}
+ 
+#Rock iframe{
+    width: 560px;
+    height: 315px;
 }
 #Main img{/*ändrar tjocklecken på bild i id Main*/
     width:25vh;
