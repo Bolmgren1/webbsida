@@ -96,6 +96,9 @@ a:visited{/*LoVe Focus HAte och gör textfärgen lila när man varit inne på de
 a:hover{/*LoVe Focus HAte och gör textfärgen svart när man håller över den*/
     color: black;
 }
+a:focus{
+    color:#551A8B;
+}
 a:active{/*LoVe Focus HAte och gör färgen blå när den är aktiv*/
     color:rgb(0, 0, 225);
 }
