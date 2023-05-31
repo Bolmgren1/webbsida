@@ -93,12 +93,13 @@ a:link{ /*LoVe Focus HAte och gör att textfärgen blir blå i den globala menyn
 a:visited{/*LoVe Focus HAte och gör textfärgen lila när man varit inne på den*/
     color:#551A8B;
 }
+a:focus{/*LoVe Focus HAte och gör färgen lila när den är i focus*/
+    color:#551A8B;
+}
 a:hover{/*LoVe Focus HAte och gör textfärgen svart när man håller över den*/
     color: black;
 }
-a:focus{
-    color:#551A8B;
-}
+
 a:active{/*LoVe Focus HAte och gör färgen blå när den är aktiv*/
     color:rgb(0, 0, 225);
 }
@@ -131,9 +132,11 @@ footer{
     height: 2.5rem;
     background-color: grey;
     font-size: medium;
-}/*vart videon ska ligga på sidan*/
+}/*vart videon ska ligga på sidan och storleken på den*/
 #Rock iframe{
     margin-right: 27%;
+    width:560px;
+    height:315px;
 }
 #Rap img{/*bestämmer storlek på bild och så den sitter rätt*/
     width: 45vh;
